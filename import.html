@@ -105,38 +105,35 @@
         </div>
     </div>   
     <!--import end-->
-    
-    <script>
-        // Initialize the map as static
-        var map = L.map('map', {
-            dragging: false, // Disable dragging
-            zoomControl: false, // Disable zoom controls
-            scrollWheelZoom: false, // Disable scroll zoom
-            boxZoom: false // Disable box zoom
-        }).setView([20, 0], 2);
-
-        // Add OpenStreetMap tiles
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '© OpenStreetMap'
-        }).addTo(map);
-
-        // Add markers for countries
-        var countries = [
-            { name: "Senegal", coords: [14.4974, -14.4524] },
-            { name: "Egypt", coords: [26.8206, 30.8025] },
-            { name: "India", coords: [20.5937, 78.9629] },
-            { name: "Brazil", coords: [-14.2350, -51.9253] },
-            { name: "Australia", coords: [-25.2744, 133.7751] },
-        ];
-
-        countries.forEach(function(country) {
-            L.marker(country.coords).addTo(map)
-                .bindPopup(country.name)
-                .openPopup();
-        });
-    </script>
-
+             <div class="container-xxl py-5 2222">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <h1 class="display-7 mb-4">List of Products We Export</h1>
+                            <ul>
+                                <li>Turmeric Finger ,Dry Ginger ,Green Coffe Beans</li>
+                                <li>Bay Leaves ,Black Pepper ,All Agro Products</li>
+                                <li>Red Chilli ,Cardamoms ,Corn Starch</li>
+                                <li>Tartrazine Powder ,Fenugreek Seeds ,Onion Flaks</li>
+                                <li>Galangel Roots ,Basmati Rice ,Onion Powder</li>
+                                <li>Sesame Seeds ,Cumin Seeds ,Garlic Powder</li>
+                                <li>Chia Seeds ,Coriander ,Dextrose Mono Hydrate</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <h1 class="display-7 mb-4">List of Products We Import</h1>
+                            <ul>
+                            <li>California Almonds</li>    
+                            <li>Syria Almonds</li>
+                            <li>Pistachio</li>
+                            <li>Cashew Nots</li>
+                            <li>Cloves</li>
+                            <li>Cinnamon</li>
+                            <li>Black Pepper</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
     <!--Export start-->
     <!-- Countries We Offer Start -->
     <div class="container-fluid country overflow-hidden py-5">
